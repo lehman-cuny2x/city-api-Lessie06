@@ -38,8 +38,8 @@ class City extends React.Component{
     
     
     render(){
-        let zips=[];
-        zips = this.state.data.map((zips,index) => <CitySearchComponent key={index}{...zips}/>)
+        // let zips=[];
+        // zips = this.state.data.map((zips,index) => <CitySearchComponent key={index}{...zips}/>)
         
         return(
             <div>
