@@ -36,26 +36,24 @@ class City extends React.Component{
     }
 
     
-    
-    
     render(){
         console.log(this.state.data)
-        // let zips=[];
-        // zips = this.state.data.map((zips,i) => <CitySearchComponent {...zips}/>)
-         
-
-        // let displayData=[];
+        
          let displayData = <CitySearchComponent zips={(this.state.data)}/>;
         return(
             <div>
-                <h1>Enter City </h1>
-                <form >
-                    <label>City Search:</label>
+            <div id="title">
+                <h1 id="header">Enter City </h1>
+                </div>
+                <div>
+                <form id="city-search">
+                    <label >City Search:</label>
                    <p> <input type="text" id="city"></input>
                     <button type="button" onClick={this.citySubmit} >Submit</button>
                     </p>
                    {displayData} 
                 </form>
+            </div>
             </div>
         )
     }
