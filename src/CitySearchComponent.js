@@ -12,10 +12,11 @@ class CitySearchComponent extends React.Component{
     render(){
 
         let items=[];
-        items = this.props.zips.map((i)=> {return <p>Zip Codes in that area {i}</p>})
+        items = this.props.zips.map((i)=> {return <p> {i}</p>})
 
         return(
             <div>
+            <h2>Zip Codes</h2>
                 {items}
             </div>
         )
