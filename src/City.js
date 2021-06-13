@@ -25,32 +25,38 @@ class City extends React.Component{
                 
                 
             })
-            console.log(this.state.data)
+            // console.log(this.state.data)
+            
             // console.log("Hello World")
         })
         .catch(error=> console.log(error))
 
         
-        //  let results = this.state.data.map({data} => {return <CitySearchComponent Zips={this.props.Zips}} />)
+        
     }
 
     
-    
-    
     render(){
-        // let zips=[];
-        // zips = this.state.data.map((zips,index) => <CitySearchComponent key={index}{...zips}/>)
+        console.log(this.state.data)
         
+         let displayData = <CitySearchComponent zips={(this.state.data)}/>;
         return(
             <div>
-                <h1>Enter City </h1>
-                <form >
-                    <label>City Search:</label>
+            <div id="title">
+                <h1 id="header">Enter City </h1>
+                </div>
+                <div>
+                <form id="city-search">
+                    <label >City Search:</label>
                    <p> <input type="text" id="city"></input>
                     <button type="button" onClick={this.citySubmit} >Submit</button>
                     </p>
-                    {zips}
+                    <div id="cities">
+                    {displayData}
+                    </div>
+                   
                 </form>
+            </div>
             </div>
         )
     }

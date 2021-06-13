@@ -11,3 +11,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+body{
+  margin: 0px;
+  background-color: coral;
+}
+
+#header{
+  /* margin: auto; */
+  text-align: center;
+ 
+ 
+  
+}
+#city-search{
+  margin-top: 20px;
+  /* padding-left: 720px; */
+  text-align: center;
+}
+
+#title{
+  padding-top: 10px;
+  background-color:#5F6A6A;
+  padding-bottom: 10px;
+
+  
+}
+
+#cities{
+  width: 400px;
+  box-shadow: 1px 1px 3px #000;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  margin-left: 560px;
+}
