@@ -51,7 +51,10 @@ class City extends React.Component{
                    <p> <input type="text" id="city"></input>
                     <button type="button" onClick={this.citySubmit} >Submit</button>
                     </p>
-                   {displayData} 
+                    <div id="cities">
+                    {displayData}
+                    </div>
+                   
                 </form>
             </div>
             </div>
